@@ -1,6 +1,6 @@
 # API-Endpoints
 All endpoints use the base URL: `http://localhost:8080/api/posts`
-### 1. Get All posts
+### 1. Get All Characters
 ```http
 GET /api/posts
 ````
@@ -23,11 +23,11 @@ GET /api/posts
     }
 ]
 ```
-## 2. Get Post by ID
+## 2. Get Character by ID
 ```http
 Get /api/posts/{id}
 ```
-### 3. Create a New Post
+### 3. Create a New Character
 ```http
 POST /api/posts
 request body:
@@ -48,7 +48,7 @@ request body:
     "universe": "The universe your character is from"
 }
 ```
-### 4. Update an Existing Post
+### 4. Update an Existing Character
 ```http
 PUT /api/posts/{id}
 request body:
@@ -71,12 +71,12 @@ request body:
 }
 ```
 
-### 5. Delete a Post
+### 5. Delete a Character
 ```http
 Delete api/posts/{id}
 ```
 **Response** <Empty>
-### 6. Search Post by Name or Race
+### 6. Search Character by Name or Race
 ```http
 GET /api/posts/search?query=Osiris
 ```
