@@ -10,7 +10,6 @@ GET /api/posts
     {
         characterid: 1,
         description: "A chaperone weilding human, and suprisingly not a light bearer.",
-        id: 1,
         name: "Amanda Holiday",
         race: "Human",
         universe: "Destiny"
@@ -18,7 +17,6 @@ GET /api/posts
     {
         characterid: 2,
         description: "The explorer of the infinite forest, and great friend of Saint XIV",
-        id: 2,
         name: "Osiris",
         race: "Human",
         universe: "Destiny"
@@ -45,7 +43,6 @@ request body:
 {
     "characterid":3,
     "description": "Description of character",
-    "id":3,
     "name": "Character_name",
     "race": "Race of your character",
     "universe": "The universe your character is from"
@@ -68,7 +65,6 @@ request body:
     
     "characterid":3,
     "description": "Updated description of character",
-    "id":3,
     "name": "Updated character_name",
     "race": "Updated race of your character",
     "universe": "Updated universe your character is from"
@@ -90,7 +86,6 @@ GET /api/posts/search?query=Osiris
     {
     "characterid": 2,
     "description": "The explorer of the infinite forest, and great friend of Saint XIV",
-    "id": 2,
     "name": "Osiris",
     "race": "Human",
     "universe": "Destiny"
