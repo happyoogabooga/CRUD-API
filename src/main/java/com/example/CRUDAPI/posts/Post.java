@@ -11,27 +11,27 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "posts")
+@Table(name = "Character")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Post {
+public class Post{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long characterid;
+    private long characterid;
 
     @Column(nullable = false)
-    String name;
+    private String name;
 
     @Column(nullable = false)
-    String description;
+    private String description;
 
     @Column(nullable = false)
-    String race;
+    private String race;
     
     @Column(nullable = false)
-    String universe;
+    private String universe;
 
     public Post(String name, String description, String race, String universe){
         this.name = name;

@@ -23,11 +23,6 @@ public class PostApiController {
     this.postService = postService;
   }
 
-  @GetMapping("/hello")
-  public String hello() {
-    return "Hello from PostController!";
-  }
-
   @GetMapping
   public ResponseEntity<List<Post>> getAllPosts() {
     List<Post> posts = postService.getAllPosts();
