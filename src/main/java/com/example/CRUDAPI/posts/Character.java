@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Post{
+public class Character{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,10 +33,15 @@ public class Post{
     @Column(nullable = false)
     private String universe;
 
-    public Post(String name, String description, String race, String universe){
+    @Column(nullable = false)
+    private String personality;
+    
+    private String thumbNail;
+    public Character(String name, String description, String race, String universe, String thumbNail){
         this.name = name;
         this.description = description;
         this.race = race;
         this.universe = universe;
+        this.thumbNail = thumbNail;
     }
 }

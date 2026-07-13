@@ -1,5 +1,6 @@
 # API-Endpoints
 All endpoints use the base URL: `http://localhost:8080/api/posts`
+Production URL: `https://crud-api-azt2.onrender.com`
 ### 1. Get All Characters
 ```http
 GET /api/posts
